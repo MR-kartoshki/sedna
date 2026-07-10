@@ -1,3 +1,7 @@
+plugins {
+    id("org.gradle.toolchains.foojay-resolver-convention") version "0.9.0"
+}
+
 fun substituteLocal(directoryName: String, libraryName: String) {
     val path = File("../${directoryName}");
     if (path.exists()) {
